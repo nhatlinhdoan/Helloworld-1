@@ -1,3 +1,6 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -17,6 +20,11 @@ public class Helloworld {
     public static void main(String[] args) {
         System.out.println("Helloworld");
         System.out.println("Test commit 1");
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        String tmp = "18/3/2017";
+        Date date = sdf.parse(tmp);
+        System.out.println(date);
+        System.out.println(date);
     }
     
 }
